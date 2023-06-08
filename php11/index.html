@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Empleados</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container">
+    <div class="card">
+    <h1>Registro de Empleados</h1>
+    <form id="formulario">
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" name="nombre" id="nombre" pattern="[a-zA-Z\s]+" title="Ingresa un nombre válido (solo letras y espacios)" required>
+        <br><br>
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" min="18" max="100" required>
+        <br><br>
+        <label for="estado_civil">Estado Civil:</label>
+        <select name="estado_civil" id="estado_civil" required>
+            <option value="soltero">Soltero</option>
+            <option value="casado">Casado</option>
+            <option value="viudo">Viudo</option>
+        </select>
+        <br><br>
+        <label for="sexo">Sexo:</label>
+        <input type="radio" name="sexo" id="sexo_masculino" value="masculino" required>
+        <label for="sexo_masculino">Masculino</label>
+        <input type="radio" name="sexo" id="sexo_femenino" value="femenino" required>
+        <label for="sexo_femenino">Femenino</label>
+        <br><br>
+        <label for="sueldo">Sueldo:</label>
+        <input type="radio" name="sueldo" id="sueldo_menor" value="menor_1000" required>
+        <label for="sueldo_menor">Menos de 1000</label>
+        <input type="radio" name="sueldo" id="sueldo_entre" value="entre_1000_2500" required>
+        <label for="sueldo_entre">Entre 1000 y 2500</label>
+        <input type="radio" name="sueldo" id="sueldo_mayor" value="mayor_2500" required>
+        <label for="sueldo_mayor">Más de 2500</label>
+        <br><br>
+        <input type="submit" value="Guardar" class="btn btn-primary">
+    </form>
+</div>
+
+<div class="resultados-section">
+    <h2>Resultados</h2>
+    <table id="tabla-resultados" class="table">
+        <thead>
+            <tr>
+                <th>Nombre y Apellido</th>
+                <th>Edad</th>
+                <th>Estado Civil</th>
+                <th>Sexo</th>
+                <th>Sueldo</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+<h3>Peticiones</h3>
+<ul id="lista-peticiones">
+    <li>Total empleado de sexo femenino: ></li>
+    <li >Total de hombres casados que ganan más de 2500:</li>
+    <li>Total de mujeres viudas que ganan más de 1000:</li>
+    <li>Edad promedio de hombres: </li>
+</ul>
+                    
+
+    <script src="formulario.js"></script>
+</body>
+</html>
