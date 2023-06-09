@@ -53,7 +53,7 @@ $(document).ready(function() {
 
     $('#formulario').submit(function(e) {
         e.preventDefault();
-
+    
         var datosFormulario = $(this).serialize();
         $.ajax({
             type: 'POST',
@@ -61,12 +61,18 @@ $(document).ready(function() {
             data: datosFormulario,
             dataType: 'json', // Indicar que se espera una respuesta JSON
             success: function(response) {
+                // Limpiar los campos del formulario
+                formulario.reset();
+    
+                // Mostrar la alerta de registro exitoso
+                alert('Registro exitoso');
+    
                 // Actualizar la tabla con los nuevos datos
                 $('#tabla-resultados tbody').append(response.datosEmpleado);
-
+    
                 // Actualizar las estadísticas y la tabla nuevamente
                 obtenerDatosEmpleados();
             }
         });
-    });
+    });    
 });
