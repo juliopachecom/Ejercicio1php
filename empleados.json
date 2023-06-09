@@ -1,0 +1,58 @@
+[
+    {
+        "nombre": "Julio Pacheco",
+        "edad": "20",
+        "estado_civil": "casado",
+        "sexo": "masculino",
+        "sueldo": "mayor_2500"
+    },
+    {
+        "nombre": "Mauro",
+        "edad": "23",
+        "estado_civil": "soltero",
+        "sexo": "masculino",
+        "sueldo": "menor_1000"
+    },
+    {
+        "nombre": "Ligni",
+        "edad": "22",
+        "estado_civil": "viudo",
+        "sexo": "masculino",
+        "sueldo": "entre_1000_2500"
+    },
+    {
+        "nombre": "Ligni",
+        "edad": "22",
+        "estado_civil": "viudo",
+        "sexo": "femenino",
+        "sueldo": "entre_1000_2500"
+    },
+    {
+        "nombre": "Ligni",
+        "edad": "22",
+        "estado_civil": "viudo",
+        "sexo": "femenino",
+        "sueldo": "mayor_2500"
+    },
+    {
+        "nombre": "Juan Medina",
+        "edad": "30",
+        "estado_civil": "casado",
+        "sexo": "masculino",
+        "sueldo": "mayor_2500"
+    },
+    {
+        "nombre": "Juan Medina",
+        "edad": "30",
+        "estado_civil": "casado",
+        "sexo": "masculino",
+        "sueldo": "mayor_2500"
+    },
+    {
+        "nombre": "Juan",
+        "edad": "20",
+        "estado_civil": "soltero",
+        "sexo": "masculino",
+        "sueldo": "menor_1000"
+    }
+]
